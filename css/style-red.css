@@ -1,0 +1,593 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,100,300);
+/* mengimport font yang diinginkan*/
+*{
+	margin: 0px; /* mengatur margin dan padding pada keseluruhan halaman*/
+	padding: 0px;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #D9D9D9; /* set warna background yang diinginkan*/
+}
+
+.container {
+	font-family: Ubuntu; /* set pengaturan umum pada halaman*/
+	
+}
+
+.absolutepos {
+	position: absolute;
+}
+
+.relativepos{
+	position: relative;
+}
+
+.loginpage { /* set pengaturan pada halaman login*/
+	background-image: url("../media/bg.jpg") ; 
+	background-size: 100%;
+	background-position: center;
+	background-repeat: repeat-y;
+}
+
+.header { /* mengatur header*/
+	background-color: #EB013C;
+    left: 0%; 
+    position: relative;
+    z-index: 2;
+}
+
+.header p, .headermain p { 
+	float: left;              
+    top: 50%; 
+    margin-left: 100px;                        
+    transform: translate(0, -50%);
+
+}
+
+.header img, .headermain img{
+	margin: 20px 10px 5px 10px;
+	left : 0;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.headermain{ 
+	top: 	0;	
+	position: fixed; /* mengatur posisi agar tetap di tempat*/
+	background-color: #EB013C;
+    left: 0%;
+    width: 100%;
+    height: 85px;
+    z-index: 2;
+}
+
+.content { /* mengatur aturan umum konten*/
+	padding: 0px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -100px;
+}
+
+.menubar { /* mengatur menubar pada profilepage dan home page*/
+	top: 	0;
+	background-color: #EB013C;
+	width: 100%;
+	height: 27px;
+	position: fixed;
+	margin-top: 85px;
+	padding-top: 4px;
+	z-index: 2;
+}
+
+.outsidebox { /* mengatur konten profilepage*/
+	margin-top: 20px;
+	width: 900px;
+	background-color: white;
+	min-height: 350px;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 0;
+	color : #505050;
+	margin-bottom: 20px;
+}
+
+.insidebox h1{ /* mengatur heading pada class tertentu*/
+	margin-left: 300px;
+	margin-top: 20px;
+	font-size: 250%;
+}
+
+.insidebox img{
+	margin: 25px;
+	width: 250px;
+	height: 250px;
+}
+
+.tabprofile {
+	margin-left: 300px;
+	margin-top: 80px;
+	padding : 1px;
+}
+
+.homeprofpic {
+	margin-top: 20px;
+	width: 200px;
+	height: 110px;
+	background-color: white;
+	margin-left: 11px;
+	color: #505050;
+}
+.homeprofpic img{ /*mengatur tampilan image suatu kelas*/
+	margin: 6px;
+	width: 70px;
+	height: 70px;
+}
+
+.homeprofpic p {
+	margin: 6px;
+	font-weight: bold;
+	bottom: 0%;
+}
+
+.newsfeed {
+	width: 900px;
+	min-height: 100%;
+	background-color: rgba(255,255,255,0.30);
+	color: #505050;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+}
+
+.createpost {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 15px;
+	min-height: 140px;
+	width: 650px;
+	background-color: white;
+}
+
+.createpost textarea{ /*mengatur text area*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: auto;
+	padding: .55em;
+    width: 600px;
+    margin-bottom: 1em;
+    font-family: Ubuntu;
+    font-size: 14px;
+}
+
+.postbtn, .shwhide {
+	padding: 4px;
+	right: 0px;
+	bottom: 0px;
+	margin-bottom: 15px;
+	margin-right: 27px;
+	color: white;
+	background-color: #EB013C;
+	border: none;
+	text-decoration: none;
+}
+
+.shwhide {
+	z-index: +2;
+}
+
+.sendbtn:hover , .postbtn:hover, .shwhide:hover{ /* mengatur perubahan link ketika berada di bawah pointer mouse*/
+	color: #EB013C;
+	background-color: white ;
+	border-color: #EB013C;
+	border: solid;
+	border-width: 1px;
+}
+
+.post {
+	padding: 15px;
+	min-height: 110px;
+	width: 650px;
+	background-color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.thumbpic{
+	float: left;
+	width: 45px;
+	height: 45px;
+}
+
+.thumbsender{
+	float: 	left;	
+	width: 45px;
+	height: 45px;
+}
+
+.post h4 {
+	padding-left: 15px;
+	float : left; 
+	font-weight: bold;
+}
+
+.post p{
+	width: 520px;
+	margin: 10px 0 0 35px;
+	padding: 20px 0 20px 20px;
+	white-space: pre-line;
+}
+
+.imgpost {
+	display: none;
+	height: 240px;
+}
+
+.linkto, .interact a{
+	text-decoration: none;
+	bottom: 0px;
+	margin: 5px;
+	color: #EB013C;
+}
+
+.linkto:hover, .interact a:hover{ /* mengatur perubahan link ketika berada di bawah pointer mouse*/
+	text-decoration: underline;
+}
+
+.textpost{ /*simulasi posisi posting pada homepage*/
+	min-height: 110px;
+}
+
+.mediapost{
+	
+}
+
+.mediapost p{
+	top: 15%;
+}
+
+.boxpost{
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;
+}
+
+.sidenav { /*membuat navigasi samping*/
+	top: 39%;
+	position: fixed;
+	background-color: white;
+	width: 180px; 
+	min-height: 260px;
+	padding: 15px;
+}
+
+.sidenav ul, .sidenav li{
+	padding: 3px;
+}
+
+.theme {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+
+.borderlight{ /*pengaturan border yang dipanggil pada beberapa bagian html*/
+	border: solid;
+	border-width: 1px; 
+	border-color: rgba(80,80,80,0.45);
+}
+
+
+.interact{ /*posisi like, dislike, comment dan delete pada post homepage*/
+	padding-left: 15px;
+}
+
+.newsfeed, /*memposisikan ke tengah*/
+.footer,
+.footermain,
+.post,
+.createpost,
+.createpost textarea,
+.messagethread{
+	left: 50%;
+	transform: translate(-50%,0%);
+}
+
+td, tr{
+	padding: 6px;
+}
+
+ul, li{
+	padding: 7px;
+	list-style-type: none; /*membuar pengaturan pada list*/
+}
+
+.profcontact {
+	margin-left: 600px;
+	margin-top: 80px;
+	padding: 2px;
+}
+
+.tabprofile tr > td:first-child { /* membuat row 1 tabel bold*/ 
+	font-weight: bold;
+} 
+
+.edit, .aboutshw{
+	color: #EB013C;
+	font-size: 0.9em;
+	padding-left: 25px;
+	bottom: 20px;
+	text-decoration: none;
+}
+
+.aboutshw{
+	right: 	25px;
+}
+
+.aboutprofile{
+	justify-content: flex-start	;
+	margin-top:-30px; 
+	padding: 25px;
+	display: none;
+	background-color: white;
+	min-height: 50px;
+}
+
+.edit:hover .aboutshw:hover { /* mengatur perubahan link ketika berada di bawah pointer mouse*/
+	text-decoration: underline;
+}
+
+.loginform{
+	background: #EB013C;
+	opacity: 0.97;
+	left: 85%;
+	bottom: -65%;
+	width: 300px;
+	transform: translate(-80%,35%);
+	padding: 0px 50px 35px 35px;
+}
+
+.loginform h1{
+	text-align: center;
+	color: white;
+	margin-bottom: .5em;
+	font-size: 1.9em;
+}
+
+input[type=text],  /* mengatur form input text*/
+input[type=password]{
+  font-size: 1.0em;
+  padding: .55em;
+  width: 100%;
+  margin-bottom: 1em;
+  border: none;
+}
+
+
+.loginform h2 {
+	text-align: left;
+	color: #fff;
+	margin-bottom: .5em;
+	font-size: 1em;
+}
+
+.login, .signup { /*mengatur link login dan signup*/
+	color: white;
+	font-family: Ubuntu;
+	font-size: 1.0em;
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	background: transparent;
+	transition: all 200ms ease-in; /*waktu transisi warna*/
+	border-radius: .65em;
+	text-decoration: none;
+	text-align: center;
+	padding: 8px 12px 8px 12px;
+	display: inline;
+}
+
+.menulink{
+	left: 2px;
+	position: relative;
+	color: white;
+	width: 6.25em;
+	font-family: Lato;
+	font-size: 0.9em;
+	background: transparent;
+	transition: all 200ms ease-in; /*waktu transisi warna*/
+	text-decoration: none;
+	text-align: center;
+	padding: 3px 15px 6px 15px;
+	margin-bottom	: -2px;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+
+.logoutlink{
+	right: 0%;
+	position: absolute;
+	color: white;
+	width: 6.25em;
+	font-family: Lato;
+	font-size: 0.9em;
+	background: transparent;
+	transition: all 200ms ease-in; /*waktu transisi warna*/
+	text-decoration: none;
+	text-align: center;
+	padding: 3px 5px 6px 5px;
+	margin-top	: -2px;
+	margin-right: 1px;
+}
+
+.font14{ /* mengatur besar font yang akan dimasukkan pada html*/
+	font-size: 14px;
+}
+
+.login:hover, /* mengatur perubahan link ketika berada di bawah pointer mouse*/
+.signup:hover, 
+.menulink:hover,
+.logoutlink:hover {
+	background: #fff;
+	color: #EB013C;
+	border: none;
+}
+
+.signup {
+	position: relative;
+	right: -11.15em;
+}
+
+.messagebody{
+	color: #505050;
+}
+.messagelist {
+	left: 4%;
+	width: 270px;
+	background: rgba(255,255,255,0.30);
+	padding-top: 20px;
+	height: 575px;
+	overflow : auto	;
+}
+
+.sender {
+	width: 270px;
+	background-color: white;
+	height: 45px;
+	padding: 10px;
+	margin-bottom:-3px;
+}
+
+ .sender:hover, .senderhover, .senderfocus{
+	background-color: #EB013C;
+	color: white;
+}
+
+.sendername {
+	padding-top: 13px;
+	padding-left: 10px;
+	float : left; 
+	font-weight: bold;
+}
+
+.messagethread {
+	display: none;
+	top: 0%;
+	padding-top: 25px;
+	width: 600px;
+	height: 575px;
+	background: rgba(255,255,255,0.30);		
+}
+
+.postmessage {
+	width: 100%;
+	height: 120px;
+	background-color: white;
+}
+
+.postmessage textarea{
+	padding: 5px;
+	margin: 20px;
+	width: 535px;
+	font-family: Ubuntu;
+	font-size: 14px;
+	height: 35px;
+}
+
+.sendbtn{
+	position: absolute;
+	padding: 4px;
+	color: white;
+	background-color: #EB013C;
+	border: none;
+	text-decoration: none;
+	left: 86%;
+	top: 17%;
+}
+
+.messages {
+	width: 100%;
+	height: 420px;
+	overflow: auto;
+}
+
+.message {
+	position: relative;
+	min-height: 20px;
+	max-width: 400px;
+	margin-top: 25px;
+	background-color: white;
+	padding: 10px;
+
+}
+
+.message p {
+	white-space: pre-wrap;
+}
+
+.leftpos {
+	left: 0%;
+}
+
+.rightpos {
+	left: 26%;
+}
+
+.rightpos p{
+	text-align: right;
+}
+
+.footer,.footermain,.push {
+	margin-top: 10px;
+	z-index: 0;
+	width: 100%;
+    height: 100px; /*menentukan height agar footer berada pada posisi bawah*/
+    clear: both;
+}
+
+.bottomfoot{
+	background-color: white;
+	font-size: 14px;
+}
+
+.leftfoot {
+	position: absolute;
+	right : 40px;
+}
+
+.rightfoot {
+	padding: 3px;
+	margin-left: 20px;
+}
+
+.rightfoot img{
+	margin: 3px;
+	width : 25px;
+}
+
+.contact, .mail{
+	position: relative;
+}
+
+.contact p, .mail p{           
+    top: 50%; 
+    margin-left: 50px;                        
+    transform: translate(0, -50%);
+    position: absolute;
+    font-size: 14px;
+}
+
+.footerinfo{
+	background-color: #505050;
+	color: #fff;
+	padding-top:10px; 
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, input,p{ /* mengatur tag text umum yang digunakan*/
+  font-family: Ubuntu;
+  font-weight: normal;
+}
